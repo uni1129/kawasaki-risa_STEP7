@@ -234,12 +234,12 @@ GROUP BY
 
 -- 設問２１
 INSERT INTO users (name, age, gender, created_at)
-VALUES (7,'中村愛', 25, 'female', '2025-06-01');
+VALUES ('中村愛', 25, 'female', '2025-06-01');
 
 
 -- 設問２２
 INSERT INTO products (product_name, price)
-VALUES (6,'エアコン', 60000);
+VALUES ('エアコン', 60000);
 
 
 -- 設問２３
