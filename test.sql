@@ -1,17 +1,17 @@
 -- 設問１
-SELRCT
-  *
+SELECT
+    *
 FROM
-  `users`;
+    `users`;
 
 
 -- 設問２
 SELECT
-  *
+    *
 FROM
-  users
+    users
 WHERE 
-  YEAR(created_at) = 2024;
+    YEAR(created_at) = 2024;
 
 
 -- 設問３
@@ -35,7 +35,7 @@ SELECT
     users.name, orders.order_date
 FROM
     orders
-JOIN users ON oders.user_id = users.id;
+JOIN users ON orders.user_id = users.id;
 
 
 -- 設問６
@@ -234,12 +234,12 @@ GROUP BY
 
 -- 設問２１
 INSERT INTO users (name, age, gender, created_at)
-VALUES ('中村愛', 25, 'female', '2025-06-01');
+VALUES (7,'中村愛', 25, 'female', '2025-06-01');
 
 
 -- 設問２２
 INSERT INTO products (product_name, price)
-VALUES ('エアコン', 60000);
+VALUES (6,'エアコン', 60000);
 
 
 -- 設問２３
@@ -263,10 +263,10 @@ WHERE
 -- 設問２６
 UPDATE products
 SET
-     price = ROUND(price * 1.10);
+    price = FLOOR(price * 1.10);
 
 
--- 設問２7
+-- 設問２７
 UPDATE orders
 SET
     order_date = '2024-05-01'
